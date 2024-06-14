@@ -42,7 +42,7 @@ let timer;
 let timeRemaining;
 let completedRounds = [];
 
-const roundDurations = [0.05 * 60, 1.5 * 60, 2 * 60, 15 * 60]; // durations in seconds for rounds 1, 2, 3, and 4
+const roundDurations = [1 * 60, 1.5 * 60, 2 * 60, 15 * 60]; // durations in seconds for rounds 1, 2, 3, and 4
 
 const quizData = [
   //round 1
