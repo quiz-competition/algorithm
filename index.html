@@ -3,49 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithms Quiz Competition</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Algorithm Quiz Competition</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
-    <div id="intro-container">
-        <h1>Algorithms Quiz Competition</h1>
-        <form id="participant-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <button type="submit">Start Quiz</button>
-        </form>
-    </div>
-    <div id="rules-container" class="hidden">
-        <h1>Rules</h1>
-        <p id="rules-text"></p>
-        <button onclick="startRound()">Start Round</button>
-    </div>
+    <!-- <img class="bg" src="./bg-img2.jpg" alt=""> -->
+    <header id="main-header">
+        <h1>Welcome to the Algorithm Quiz Competition</h1>
+        <p>Sharpen your skills and challenge your knowledge with our comprehensive Algorithm Quiz. This competition is designed to test your understanding across various levels of algorithmic concepts, from basic principles to advanced problem-solving techniques.</p>
+        <p>Prepare yourself for an engaging and educational experience as you navigate through multiple rounds, each crafted to assess your proficiency in different areas of algorithms. Start your journey now and see how you rank among your peers!</p>
+        <div class="btn-div">
+            <div class="start-btn">Get Started</div>
+        </div>
+        </header>
+       
 
-    <div id="quiz-container" class="hidden">
-        <div id="timer-container">
-            Time Remaining: <span id="timer">0:00</span>
-        </div>
-        <div id="time-up-message-container" class="hidden"></div>
-        <h1>Algorithms Quiz Competition</h1>
-        <div id="question-container"></div>
-        <div id="buttons-container">
+<!--Second Page-->
+<div id="participant-form" class="hidden">
+<form class="form-element" >
+    <div class="ipd"><label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br></div><div class="ipd">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br></div>
+    <button type="submit" class="form-btn" >Get Started<span class="text"></span><span>Good Luck</span></button>
+</form></div>
+
+        <section  class="hidden" id="round-info-section">
+            <div class="left-half">
+                <h2>How to Attend the Quiz</h2>
+                <p class="wel-rul">Welcome to the Algorithm Quiz Competition! Here’s what you need to know:</p>
+                    <p><span class="color">&#128960;</span>&ensp;You can start with any round of your choice.&ensp;&ensp;&ensp;&ensp;&nbsp;</p>
+                    <p><span class="color">&#128960;</span>&ensp;Each round contains a set of algorithm questions designed to test your knowledge.</p>
+                    <p><span class="color">&#128960;</span>&ensp;The final score will only be displayed after you have completed all four rounds.</p>
+                    <p><span class="color">&#128960;</span>&ensp;Make sure to manage your time well, as each round is timed.</p>
+                
+            </div>
+            <div class="right-half">
+                <section  id="round-buttons-section">
+                <h2>Select a Round</h2><div class="btns">
+                <button class="round-button" onclick="showRules(0)" id="round-0" >Round 1<span class="btn-text"> &#x231B; 60s &#x1F4AA; Easy</span> </button>
+                <button class="round-button" onclick="showRules(1)" id="round-1"  >Round 2<span class="btn-text"> &#x231B; 90s &#x1F4AA; Intermediate</span></button>
+                <button class="round-button" onclick="showRules(2)" id="round-2"  >Round 3<span class="btn-text"> &#x231B; 120s &#x1F4AA; Hard</span></button>
+                <button class="round-button" onclick="showRules(3)" id="round-3"  >Round 4<span class="btn-text"> &#x231B; 15min &#x1F4AA; Super Hard</span></button></div></section>
+            </div>
+        </section>
+
+
+    
+        <section class="hidden" id="rules-section">
+            <h2 class="color">Competition Rules</h2>
+            <p id="rules-text"></p>
+            <button onclick="startRound()">Start Round</button>
+        </section>
+        
+        <section class="hidden" id="quiz-container">
+            <h2 class="color" id="round-title"></h2>
+            <div class="color" id="timer-container">Time Remaining: <span id="timer">0:00</span></div><div id="time-up-message-container" class="hidden"></div>
+            <div id="question-container"></div>
             <button id="save-for-last-btn" class="hidden" onclick="saveForLast()">Save for Last</button>
-        </div>
-    </div>
-    
-    <div id="score-container" class="hidden">
-        <h2>Final Score</h2>
-        <p id="final-score"></p>
-    </div>
-    
-    <div id="review-container"></div>
-    
-<script type="module" src="./script.js">
-</script>
-    
-</body>
-</html>
+        </section>
+        
+        <section class="hidden" id="score-container">
+            <h2  class="color">Final Score</h2>
+            <p id="final-score"></p>
+        </section>
+        
+        <div id="review-container"></div>
+
+
+
+
+
+
+
+
+        <footer>
+            <p>&copy; 2024 Department of CSE - AEC. All rights reserved.<br>Developed by Vetrivel M.</p>
+        </footer>
+
+
+        <script type="module" src="./script1.js"></script>
+        </body>
+        </html>
