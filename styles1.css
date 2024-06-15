@@ -24,15 +24,24 @@ width: 100vw;
 }
 
 @media (max-width:420px) {
-  .body{
+  body, html{
     font-size: .9em;
+    overflow-x: hidden;
+    width: 100vw;
 
   }
+  /* :hover{
+    pointer-events: none;
+  } */
   #main-header p{
     font-size: 1.2em;
     text-align: left ;
   }
   
+  button:hover{
+    cursor: pointer;
+  }
+
   #round-info-section{
     display: flex;
     flex-direction: column;
@@ -54,6 +63,12 @@ width: 100vw;
   }
   footer{
     position: fixed;
+    padding: 0;
+  }
+  footer p{
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
   }
 }
 
