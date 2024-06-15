@@ -23,6 +23,40 @@ width: 100vw;
 
 }
 
+@media (max-width:420px) {
+  .body{
+    font-size: .9em;
+
+  }
+  #main-header p{
+    font-size: 1.2em;
+    text-align: left ;
+  }
+  
+  #round-info-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #round-info-section .left-half{
+    height: max-content;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  #intro-container, #rules-section, #quiz-container, #score-container {
+  
+    width: 90%;
+  }
+  .review-question{
+    margin: 20px;
+  }
+  footer{
+    position: fixed;
+  }
+}
+
 .bg{
   
   width: 100vw;
